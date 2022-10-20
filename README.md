@@ -1,5 +1,5 @@
 
-## 1.卒業論文[2022/09-]
+# 1.卒業論文[2022/09-]
 ```
   Purpose:
 
@@ -14,7 +14,7 @@
   Target [G. Horndeski, Second- order scalor-tensor field equations in a four-dimensional space]
 ```
 
-# 1.1 [D. Lovelock, The uniqueness of the Einstein field equations in a four- dimensional space]
+## 1.1 [D. Lovelock, The uniqueness of the Einstein field equations in a four- dimensional space]
 ```
   10/20 introductionの要約，計算
 ```
