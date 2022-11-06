@@ -32,16 +32,16 @@
 \begin{figure}[htbp]
   \centering
   \begin{minipage}{0.3\columnwidth}
-  \centering
-  \includegraphics[width=\columnwidth]{fig/cartecian.pdf}
-  \caption{直交座標系}
+    \centering
+    \includegraphics[width=\columnwidth]{fig/cartecian.pdf}
+    \caption{直交座標系}
     \label{car}
   \end{minipage}
   \begin{minipage}{0.25\columnwidth}
-  \centering
-  \includegraphics[width=\columnwidth]{fig/oblique.pdf}
-  \caption{斜交座標系}
-  \label{obl}
+    \centering
+    \includegraphics[width=\columnwidth]{fig/oblique.pdf}
+    \caption{斜交座標系}
+    \label{obl}
   \end{minipage}
 \end{figure}
 
@@ -73,7 +73,7 @@
 \subsection{斜交座標の問題点}
 この問題によって引き起こされることは任意の2つのベクトルの内積を考えたとき，顕著に現れる．今，2次元平面を斜交座標をとったときの基底ベクトルを\(\vec{e_1}\)，\(\vec{e_2}\)として2つのベクトル\(\vec{v_1} = a\vec{e_1} +b\vec{e_2}\)，\(\vec{v_2} = c\vec{e_1} +d\vec{e_2}\)として，内積を考えると
 \begin{eqnarray}
-  \vec{v_1}\cdot \vec{v_2} 
+  \vec{v_1}\cdot \vec{v_2}
   &=& \left( a\vec{e_1} +b\vec{e_2} \right)\cdot \left( c\vec{e_1} +d\vec{e_2} \right)\\
   &=& ac \, \vec{e_1} \cdot \vec{e_1} + ad\, \vec{e_1} \cdot \vec{e_2} +\cdot bc\, \vec{e_2} \cdot \vec{e_1} +bd\, \vec{e_2} \cdot \vec{e_2} \label{2}
 \end{eqnarray}
@@ -84,7 +84,7 @@
     a \\
     b
   \end{pmatrix}
-  \cdot 
+  \cdot
   \begin{pmatrix}
     c \\
     d
@@ -100,19 +100,19 @@
 \begin{equation*}
   \begin{pmatrix}
     1 & 2 \\
-    3 & 4 
+    3 & 4
   \end{pmatrix}
 \end{equation*}
 このような，ベクトルが一方向にのみに成分を持っていたような数の集まりであったことを拡張して，2次元的な拡張を行ったものが行列である．一般に行列\(A\)は次のように添字\(i,j\)の2つを用いて表す．
 \begin{equation*}
   A= (a_{ij})=
   \begin{pmatrix}
-    a_{11} & \cdots & a_{1j} & \cdots & a_{1n}\\
+    a_{11} & \cdots & a_{1j} & \cdots & a_{1n} \\
     \vdots & \ddots &        &        & \vdots \\
     a_{i1} &        & a_{ij} &        & a_{in} \\
     \vdots &        &        & \ddots & \vdots \\
     a_{n1} & \cdots & a_{nj} & \cdots & a_{nn}
-    \end{pmatrix}
+  \end{pmatrix}
 \end{equation*}
 以降，行列は，行方向と列方向の成分数が等しいような正方行列のみについて記していく．2つの\(n\times n\)行列\(A=(a_{ij})\)，\(B=(b_{ij})\)を定義して話をすすめる．
 \subsubsection{行列の和}
@@ -120,12 +120,12 @@
 \begin{equation*}
   A+B= (a_{ij}+b_{ij})=
   \begin{pmatrix}
-    a_{11} +b_{11} & \cdots & a_{1j}+b_{1j} & \cdots & a_{1n}+b_{1n}\\
-    \vdots & \ddots &        &        & \vdots \\
-    a_{i1} +b_{i1}&        & a_{ij} +b_{ij}&        & a_{in}+b_{in} \\
-    \vdots &        &        & \ddots & \vdots \\
-    a_{n1} +b_{n1}& \cdots & a_{nj} +b_{nj}& \cdots & a_{nn}+b_{nn}
-    \end{pmatrix}
+    a_{11} +b_{11} & \cdots & a_{1j}+b_{1j}  & \cdots & a_{1n}+b_{1n} \\
+    \vdots         & \ddots &                &        & \vdots        \\
+    a_{i1} +b_{i1} &        & a_{ij} +b_{ij} &        & a_{in}+b_{in} \\
+    \vdots         &        &                & \ddots & \vdots        \\
+    a_{n1} +b_{n1} & \cdots & a_{nj} +b_{nj} & \cdots & a_{nn}+b_{nn}
+  \end{pmatrix}
 \end{equation*}
 のようになる．
 
@@ -146,14 +146,14 @@
 \end{figure}
 この定義から明らかなように，\(AB \neq BA\)である．また，積について結合則と分配則は成り立っている．証明は各自行ってほしい．最後に，行列の積における1のような役割を果たす単位行列について触れる．単位行列とは，\(i=j\)となるようなとき\footnote{このような成分を対角成分といい，それ以外の部分を非対角項と呼ぶ．}は1でそれ以外が0になるような行列でありEなどと表す．具体的には
 \begin{equation*}
-  E= 
+  E=
   \begin{pmatrix}
-    1 & \cdots & 0 & \cdots & 0\\
-    \vdots & \ddots &        &        & \vdots \\
-    0&        & 1&        & 0 \\
-    \vdots &        &        & \ddots & \vdots \\
-    0& \cdots & 0& \cdots & 1
-    \end{pmatrix}
+    1      & \cdots & 0 & \cdots & 0      \\
+    \vdots & \ddots &   &        & \vdots \\
+    0      &        & 1 &        & 0      \\
+    \vdots &        &   & \ddots & \vdots \\
+    0      & \cdots & 0 & \cdots & 1
+  \end{pmatrix}
 \end{equation*}
 のようなものである．これを用いると，
 \begin{equation*}
@@ -168,34 +168,34 @@
   \begin{pmatrix}
     a_{11} & a_{12} & a_{13} \\
     a_{21} & a_{22} & a_{23} \\
-    a_{31} & a_{32} & a_{33} 
-    \end{pmatrix}
-    \begin{pmatrix}
-      x\\
-      y\\
-      z
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-      a_{11}x + a_{12} y +a_{13}z\\
-      a_{21}x + a_{22} y +a_{23}z\\
-      a_{31}x + a_{32} y +a_{33}z\\
-     \end{pmatrix}
+    a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \begin{pmatrix}
+    x \\
+    y \\
+    z
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    a_{11}x + a_{12} y +a_{13}z \\
+    a_{21}x + a_{22} y +a_{23}z \\
+    a_{31}x + a_{32} y +a_{33}z \\
+  \end{pmatrix}
 \end{equation*}
 
 \subsection{計量テンソル}
 さて，行列についての定義・演算を終え準備は整ったので本題に戻りたい．式\refeq{2}を斜交座標を撮ったときの成分表示と行列で表現し直すと，
 \begin{equation*}
-  \vec{v_1}\cdot \vec{v_2}= 
+  \vec{v_1}\cdot \vec{v_2}=
   \begin{pmatrix}
     a & b
   \end{pmatrix}
   \begin{pmatrix}
-    \vec{e_1} \cdot \vec{e_1} & \vec{e_1} \cdot \vec{e_2}\\
+    \vec{e_1} \cdot \vec{e_1} & \vec{e_1} \cdot \vec{e_2} \\
     \vec{e_2} \cdot \vec{e_1} & \vec{e_2} \cdot \vec{e_2}
   \end{pmatrix}
   \begin{pmatrix}
-    c\\ 
+    c \\
     d
   \end{pmatrix}
 \end{equation*}
@@ -204,14 +204,14 @@
 直交座標のときが斜交座標の特別な場合であると考えると基底が直交するときはもとの内積になる必要がある．つまりはこの行列が単位行列になればよいということになる．一方で，基底が直交関係にあるときは非対角項は当然0となりこの条件を満たす．つまり，いままでは無視してよかった非対角項が斜交座標のようなより一般の座標では0とならないためその効果が生きてくるということがわかる．このように，この行列は座標系ないしは空間の性質を顕著に定める量となっているということがわかる．このような行列を計量テンソル\footnote{テンソルという言葉自体は今はそれほど大事ではないので割愛するが，ここでは行列と思っていて良い．ただ，テンソルは必ずしも行列として表されるものではないということには注意してほしい．また本当はより深い意味をもっていることには留意してほしい．}といい一般に\(g_{ij}\)と表記する．またその定義については，
 \begin{equation*}
   (g_{ij}) = \begin{pmatrix}
-    \vec{e_i} \cdot \vec{e_j} 
+    \vec{e_i} \cdot \vec{e_j}
   \end{pmatrix}
 \end{equation*}
 のようにしても問題ないように見えるが，内積の定義に内積を用いてしまっている点は少しいただけない部分である．しかし，斜交座標などのような場合についてのみであれば実用上は問題ないので今回はこれ以上踏み込まないこととする．
 
 このような計量テンソルを用いて内積を再定義する．用いるベクトルは\(\vec{a} = (a_i)\)，\(\vec{b} = (b_i)\)とする．
 \begin{equation*}
-  \vec{a}\cdot \vec{b}= 
+  \vec{a}\cdot \vec{b}=
   \sum ^n _{i=1} \sum ^n _{j=1} g_{ij} a_{i} b_{j}
 \end{equation*}
 ここで，便利な記法を紹介する．同一項内に同じ添字が現れたらその添字について1からnまですべての和を取るというルールのもと和の記号を省略するというものである．これはEinsteinの縮約記法\footnote{Einsteinはこれを自身の数学における最大の発明と自称していた．}という．なので先程の式は
@@ -240,10 +240,10 @@
 [解]
 基底ベクトルを図のようにとったとき，点P，Q，Rを斜交座標で表したとき\((t,0,0)\)，\((0,1-t,0)\)，\((0,1/2,1/2)\)のようになる．また，計量テンソルは\(\vec{a}\cdot \vec{b}=\vec{b}\cdot \vec{c}=\vec{c}\cdot \vec{a}=1\cdot 1\cos \left( \dfrac{\pi}{3} \right) = \dfrac{1}{2} \)より
 \begin{equation*}
-  g_{ij}= 
+  g_{ij}=
   \begin{pmatrix}
-    1 & 1/2 & 1/2 \\ 
-    1/2 & 1 & 1/2 \\
+    1   & 1/2 & 1/2 \\
+    1/2 & 1   & 1/2 \\
     1/2 & 1/2 & 1
   \end{pmatrix}
 \end{equation*}
@@ -256,13 +256,13 @@
     t & t-1 & 0
   \end{pmatrix}
   \begin{pmatrix}
-    1 & 1/2 & 1/2 \\ 
-    1/2 & 1 & 1/2 \\
+    1   & 1/2 & 1/2 \\
+    1/2 & 1   & 1/2 \\
     1/2 & 1/2 & 1
   \end{pmatrix}
   \begin{pmatrix}
-    t\\
-    t-1\\
+    t   \\
+    t-1 \\
     0
   \end{pmatrix}\\
   &=&
@@ -275,16 +275,16 @@
   |\overrightarrow{QR}| ^2
   &=&
   \begin{pmatrix}
-    0 &t-1/2 & 1/2
+    0 & t-1/2 & 1/2
   \end{pmatrix}
   \begin{pmatrix}
-    1 & 1/2 & 1/2 \\ 
-    1/2 & 1 & 1/2 \\
+    1   & 1/2 & 1/2 \\
+    1/2 & 1   & 1/2 \\
     1/2 & 1/2 & 1
   \end{pmatrix}
   \begin{pmatrix}
-    0\\
-    t-1/2\\
+    0     \\
+    t-1/2 \\
     1/2
   \end{pmatrix}\\
   &=&
@@ -301,13 +301,13 @@
     t & t-1 & 0
   \end{pmatrix}
   \begin{pmatrix}
-    1 & 1/2 & 1/2 \\ 
-    1/2 & 1 & 1/2 \\
+    1   & 1/2 & 1/2 \\
+    1/2 & 1   & 1/2 \\
     1/2 & 1/2 & 1
   \end{pmatrix}
   \begin{pmatrix}
-    0\\
-    t-1/2\\
+    0     \\
+    t-1/2 \\
     1/2
   \end{pmatrix}\\
   &=&
@@ -315,7 +315,7 @@
 \end{eqnarray*}
 なのでこれを\(sin(\theta)\)に変換して面積\(S(t)\)を計算すると
 \begin{eqnarray*}
-  S(t) &=& 
+  S(t) &=&
   \dfrac{1}{2}\sqrt[]{|\overrightarrow{QP}|^2|\overrightarrow{QR}|^2 -(\overrightarrow{QP}\cdot \overrightarrow{QR})^2}\\
   &=& \dfrac{1}{2} \sqrt[]{\dfrac{3}{4} \left( t^4 -t^3 +\dfrac{5}{4} t^2 -\dfrac{1}{2} t+\dfrac{1}{2}\right)} \\
   &=& \dfrac{\sqrt[]{3}}{8} \sqrt[]{4t^4 -4t^3 +5 t^2 -2 t+2}
@@ -326,21 +326,21 @@
   16t^3-12t^2+10t-2
 \end{eqnarray*}
 すると\(\dfrac{ds(t)}{dt}=0\)となる実数解は\(t=\dfrac{1}{4}\)のみ\footnote{この解は単に因数定理により計算すれば良い．}であることがわかるので増減表は，
- \[
- \begin{array}{c||c|c|c|c|c}
- \hline
- t&0&\cdots&1/4&\cdots&1\\
- \hline
- s'&&-&0&-&\\
- \hline
- s&&\searrow&s_{min}&\nearrow&\\
- \hline
- \end{array}
- \]
+\[
+  \begin{array}{c||c|c|c|c|c}
+    \hline
+    t  & 0 & \cdots   & 1/4     & \cdots   & 1 \\
+    \hline
+    s' &   & -        & 0       & -        &   \\
+    \hline
+    s  &   & \searrow & s_{min} & \nearrow &   \\
+    \hline
+  \end{array}
+\]
 となり，最小となるときの\(t\)は\(t=\dfrac{1}{4}\)のときで面積の最小値\(S_{min}\)は\(\dfrac{\sqrt[]{339}}{64}\)である．
 
 \begin{thebibliography}{9}
-\bibitem{1} 線形代数学（数学選書）　佐武一郎著　裳華房
-\bibitem{2} テンソル解析（基礎数学選書23）（復刊版）　田代嘉宏 裳華房
+  \bibitem{1} 線形代数学（数学選書）　佐武一郎著　裳華房
+  \bibitem{2} テンソル解析（基礎数学選書23）（復刊版）　田代嘉宏 裳華房
 \end{thebibliography}
 \end{document}
